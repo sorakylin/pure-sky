@@ -119,12 +119,15 @@ nav .spread {
 }
 
 .spread-false {
-    left: -200px;
+    left: -500px;
 }
 
 .spread-true,
 .spread-false {
-    transition: left 0.4s;
+    transition: left 0.7s ease-in;
+    -moz-transition: left 0.7s; /* Firefox 4 */
+    -webkit-transition: left 0.7s; /* Safari 和 Chrome */
+    -o-transition: left 0.7s; /* Opera */
 }
 
 @media (min-width: 768px) {
