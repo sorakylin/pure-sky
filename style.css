@@ -674,6 +674,10 @@ a img.aligncenter {
 .article .navigation .pre,
 .article .navigation .next {
     display: block;
+    width: 18.75em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 @media (max-width: 768px) {
