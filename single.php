@@ -37,8 +37,8 @@
                     </div>
                 </div>
                 <div class="navigation">
-                    <span class="pre"><span>上一篇：</span><?php if (get_previous_post()) previous_post_link('%link'); else echo "无"; ?></span>
-                    <span class="next"><span>下一篇：</span><?php if (get_next_post()) next_post_link('%link'); else echo "无"; ?></span>
+                    <span class="pre"><span>上一篇：</span><?php if (get_previous_post()) previous_post_link('%link'); else echo "没有上一篇啦~"; ?></span>
+                    <span class="next"><span>下一篇：</span><?php if (get_next_post()) next_post_link('%link'); else echo "没有下一篇啦~"; ?></span>
                 </div>
             </section>
         <?php endif; ?>
