@@ -7,7 +7,7 @@
     <title><?php show_title(); ?></title>
     <meta name="description" content="<?php show_meta('description'); ?>" />
     <meta name="keywords" content="<?php show_meta('keywords'); ?>" />
-    <meta name="author" content="zhaoo">
+    <meta name="author" content="skypyb">
     <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
     <link href="<?php bloginfo('template_url'); ?>/css/iconfont.css" rel="stylesheet">
     <link href="<?php bloginfo('template_url'); ?>/css/jquery.fancybox.min.css" rel="stylesheet">
