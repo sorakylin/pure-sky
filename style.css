@@ -83,29 +83,29 @@ img {
 
 /* Navbar */
 
-nav.menu-container {
+nav {
     position: fixed;
     background-color: #FFFFFF;
 }
 
-nav.menu-container ul {
+nav ul {
     margin: 0 0;
     padding: 10px 0;
     display: inline-block;
 }
 
-nav.menu-container li {
+nav li {
     list-style: none;
     display: inline;
     letter-spacing: normal;
     margin: 0 5px;
 }
 
-nav.menu-container li a {
+nav li a {
     color: #42B983;
 }
 
-nav.menu-container .spread {
+nav .spread {
     background-color: #42B983;
     border: 1px #42B983 solid;
     color: #FFFFFF;
@@ -135,11 +135,11 @@ nav.menu-container .spread {
         display: inline-block;
     }
 
-    nav.menu-container {
+    nav {
         margin-top: 20px;
     }
 
-    nav.menu-container ul {
+    nav ul {
         left: -500px;
         position: relative;
         border: 1px #42B983 solid;
@@ -152,16 +152,16 @@ nav.menu-container .spread {
         display: block;
     }
 
-    nav.menu-container {
+    nav {
         width: 100%;
         text-align: center;
     }
 
-    nav.menu-container .spread {
+    nav .spread {
         display: none;
     }
 
-    nav.menu-container ul {
+    nav ul {
         width: 100%;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
@@ -930,17 +930,50 @@ footer {
 }
 
 /*文章相关 start*/
+
+.archives-container {
+    font-size: 15px;
+    max-width: 60%;
+    margin: 0 auto;
+    border: 1px solid #dfe2e5;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.archives-article-title {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+@media (max-width: 768px) {
+    .archives-container {
+        border: 0;
+        max-width: 90%;
+    }
+    .archives-article-title {
+        margin-bottom: 40px;
+    }
+}
+
+
+
 article p {
+    font-size: 15px;
     line-height: 26px;
 }
 
 article h3 {
-    border-left: 5px solid #42B983
+    text-align: center;
+    border-bottom: 3px solid rgba(75, 191, 142, 0.58);
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
-.article-title {
-    text-align: center;
+article h4 {
+    margin-left: 40px;
 }
+
 .al_post_list li a {
     margin-right: 10px;
     margin-left: 10px;
@@ -949,20 +982,18 @@ article h3 {
     transition: color 0.3s;
 }
 
-.al_post_list li a:hover a{
-    color: #61a88a;
-}
-.al_post_list li a:hover span.time_bm{
+.al_post_list li a:hover {
     color: #61a88a;
 }
 
 .time_base-l {
     position: relative;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     margin-left: 30px;
     list-style-type: none;
     line-height: 30px;
     box-sizing: border-box;
     cursor: pointer;
 }
+
 /**文章相关 end**/

@@ -8,12 +8,12 @@ get_header();
 <?php while (have_posts()) :
 the_post(); ?>
 
-<div class="container">
-    <div class="content-widescreen">
+<div class="archives-container">
+    <div class="archives-content-widescreen">
         <section class="posts">
             <div class="posts-inner">
                 <article class="post text">
-                    <h1 class="article-title"><?php the_title(); ?></h1>
+                    <h1 class="archives-article-title"><?php the_title(); ?></h1>
                     <?php archives_list(); ?>
                 </article>
             </div><!-- /.posts-inner -->
