@@ -83,29 +83,29 @@ img {
 
 /* Navbar */
 
-nav {
+nav.menu-container {
     position: fixed;
     background-color: #FFFFFF;
 }
 
-nav ul {
+nav.menu-container ul {
     margin: 0 0;
     padding: 10px 0;
     display: inline-block;
 }
 
-nav li {
+nav.menu-container li {
     list-style: none;
     display: inline;
     letter-spacing: normal;
     margin: 0 5px;
 }
 
-nav li a {
+nav.menu-container li a {
     color: #42B983;
 }
 
-nav .spread {
+nav.menu-container .spread {
     background-color: #42B983;
     border: 1px #42B983 solid;
     color: #FFFFFF;
@@ -135,11 +135,11 @@ nav .spread {
         display: inline-block;
     }
 
-    nav {
+    nav.menu-container {
         margin-top: 20px;
     }
 
-    nav ul {
+    nav.menu-container ul {
         left: -500px;
         position: relative;
         border: 1px #42B983 solid;
@@ -152,16 +152,16 @@ nav .spread {
         display: block;
     }
 
-    nav {
+    nav.menu-container {
         width: 100%;
         text-align: center;
     }
 
-    nav .spread {
+    nav.menu-container .spread {
         display: none;
     }
 
-    nav ul {
+    nav.menu-container ul {
         width: 100%;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
@@ -929,6 +929,40 @@ footer {
     }
 }
 
+/*文章相关 start*/
 article p {
     line-height: 26px;
 }
+
+article h3 {
+    border-left: 5px solid #42B983
+}
+
+.article-title {
+    text-align: center;
+}
+.al_post_list li a {
+    margin-right: 10px;
+    margin-left: 10px;
+    color: #111;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.al_post_list li a:hover a{
+    color: #61a88a;
+}
+.al_post_list li a:hover span.time_bm{
+    color: #61a88a;
+}
+
+.time_base-l {
+    position: relative;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    list-style-type: none;
+    line-height: 30px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+/**文章相关 end**/
