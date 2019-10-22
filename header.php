@@ -19,7 +19,7 @@
 <?php flush(); ?>
 <body>
     <header>
-        <nav>
+        <nav class="menu-container">
             <div class="spread">></div>
             <?php  wp_nav_menu(array('depth'=>1,'container'=>'div','container_class'=>'menu')); ?>
         </nav>

@@ -134,9 +134,11 @@ nav .spread {
     .menu {
         display: inline-block;
     }
+
     nav {
         margin-top: 20px;
     }
+
     nav ul {
         left: -500px;
         position: relative;
@@ -149,13 +151,16 @@ nav .spread {
     .menu {
         display: block;
     }
+
     nav {
         width: 100%;
         text-align: center;
     }
+
     nav .spread {
         display: none;
     }
+
     nav ul {
         width: 100%;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -459,7 +464,7 @@ a img.aligncenter {
 
 #sc-warn {
     color: #FFBE5B;
-    border: 1px solid#FFBE5B;
+    border: 1px solid #FFBE5B;
     overflow: hidden;
     margin: 10px 0;
     padding: 15px 15px 15px 35px;
@@ -475,7 +480,7 @@ a img.aligncenter {
 
 #sc-tips {
     color: #2B394E;
-    border: 1px solid#2B394E;
+    border: 1px solid #2B394E;
     overflow: hidden;
     margin: 10px 0;
     padding: 15px 15px 15px 35px;
@@ -483,7 +488,7 @@ a img.aligncenter {
 
 #sc-blue {
     color: #1BA1E2;
-    border: 1px solid#1BA1E2;
+    border: 1px solid #1BA1E2;
     overflow: hidden;
     margin: 10px 0;
     padding: 15px 15px 15px 35px;
@@ -491,7 +496,7 @@ a img.aligncenter {
 
 #sc-black {
     color: #333333;
-    border: 1px solid#333333;
+    border: 1px solid #333333;
     overflow: hidden;
     margin: 10px 0;
     padding: 15px 15px 15px 35px;
@@ -685,14 +690,17 @@ a img.aligncenter {
         padding-top: 15px;
         padding-bottom: 5px;
     }
+
     .article .info .evaluate-button {
         padding-bottom: 15px;
         padding-top: 5px;
     }
+
     .article .info .evaluate-button,
     .article .info .tags {
         float: none;
     }
+
     .article .navigation .pre,
     .article .navigation .next {
         float: none;
@@ -920,3 +928,72 @@ footer {
         display: block;
     }
 }
+
+/*文章相关 start*/
+
+.archives-container {
+    font-size: 15px;
+    max-width: 60%;
+    margin: 0 auto;
+    border: 1px solid #dfe2e5;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.archives-article-title {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+@media (max-width: 768px) {
+    .archives-container {
+        border: 0;
+        max-width: 90%;
+    }
+    .archives-article-title {
+        margin-bottom: 40px;
+    }
+}
+
+
+
+article p {
+    font-size: 15px;
+    line-height: 26px;
+}
+
+article h3 {
+    text-align: center;
+    border-bottom: 3px solid rgba(75, 191, 142, 0.58);
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+article h4 {
+    margin-left: 40px;
+}
+
+.al_post_list li a {
+    margin-right: 10px;
+    margin-left: 10px;
+    color: #111;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.al_post_list li a:hover {
+    color: #61a88a;
+}
+
+.time_base-l {
+    position: relative;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    list-style-type: none;
+    line-height: 30px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+/**文章相关 end**/

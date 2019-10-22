@@ -1,7 +1,7 @@
 <?php
 add_action('admin_menu','theme_setting');
 function theme_setting(){
-	add_theme_page(__('主题设置'),__('主题设置'),'edit_themes',basename(__FILE__),'setting');
+	add_theme_page(__('pure-主题设置'),__('pure-主题设置'),'edit_themes',basename(__FILE__),'setting');
 	add_action('admin_init', 'register_theme_setting');
 }
 function register_theme_setting(){

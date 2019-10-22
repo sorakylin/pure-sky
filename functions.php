@@ -384,6 +384,62 @@ function clear_zal_cache()
     update_option('archives_list', ''); // 清空 zww_archives_list
 }
 
+/** MCE编辑器修改，代码插入功能 开始 **/
+
+//前置环境
+add_action( 'admin_enqueue_scripts', 'pure_highlightjs_admin_assets' );
+
+function pure_highlightjs_admin_assets() {
+    global $hook_suffix;
+
+    if ( in_array( $hook_suffix, array(
+        'index.php', # dashboard
+        'post.php',
+        'post-new.php',
+        'settings_page_pure-highlightjs-config',
+    ) ) ) {
+        wp_enqueue_script( 'pure-highlightjs', get_bloginfo( 'template_url' ) . '/js/highlight.js', array(), '0.1.0', true );
+        wp_localize_script( 'pure-highlightjs', 'PureHighlightjsTrans', array(
+            'title' => __( "Code Insert", 'pure-highlightjs' ),
+            'language' => __( "Language", 'pure-highlightjs' ),
+            'code' => __( "Source Code", 'pure-highlightjs' ),
+        ));
+    }
+}
+
+//添加javascript
+add_filter( 'mce_external_plugins', 'add_pure_highlightjs_plugin' );
+function add_pure_highlightjs_plugin( $plugin_array ) {
+
+    $plugin_array['purehighlightjs'] = get_bloginfo( 'template_url' ) . '/tinymce/tinymce.js';      //按钮的js路径
+
+    return $plugin_array;
+}
+
+//css插入
+add_filter( 'mce_css', 'pure_highlightjs_mce_css');
+
+function pure_highlightjs_mce_css( $mce_css ) {
+    if (! is_array($mce_css) ) {
+        $mce_css = explode(',', $mce_css);
+    }
+
+    $mce_css[] = get_bloginfo( 'template_url' ) . '/tinymce/tinymce.css';
+
+    return implode( ',', $mce_css );
+}
+
+//按钮插入，添加TinyMCE编辑器的按钮
+add_filter('mce_buttons', 'pure_highlightjs_mce_buttons', 101);
+
+function pure_highlightjs_mce_buttons( $buttons ) {
+    if (! in_array('PureHighlightjsInsert', $buttons) ){
+        $buttons[] = 'PureHighlightjsInsert';
+    }
+    return $buttons;
+}
+/******* MCE编辑器代码按钮(功能)插入完成 ******/
+
 // Options Append
 $options = get_option('p_options');
 eval($options['php']);
