@@ -13,6 +13,10 @@
     <link href="<?php bloginfo('template_url'); ?>/css/jquery.fancybox.min.css" rel="stylesheet">
     <?php $options = get_option('p_options'); ?>
     <link href="<?php bloginfo('template_url'); ?>/css/highlight/<?php echo $options['highlight']; ?>" rel="stylesheet">
+
+    <!--Font-Awesome CDN-->
+    <script src="https://use.fontawesome.com/25b2a5978b.js"></script>
+
     <?php echo "<style>".$options['css']."</style>"; ?>
     <?php wp_head(); ?>
 </head>
@@ -20,7 +24,7 @@
 <body>
     <header>
         <nav class="menu-container">
-            <div class="spread">></div>
+            <div class="spread"><i class="fa fa-caret-right" aria-hidden="true"></i></div>
             <?php  wp_nav_menu(array('depth'=>1,'container'=>'div','container_class'=>'menu')); ?>
         </nav>
         <hgroup class="banner">

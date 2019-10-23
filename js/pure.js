@@ -29,12 +29,14 @@ function navResponsive() {
             if (isSpread == false) {
                 $("ul").addClass("spread-true");
                 $("ul").removeClass("spread-false");
-                $(".spread").text('<');
+                $(".spread").html('<i class="fa fa-caret-left" aria-hidden="true"></i>');
+                $(".menu-container").css("background-color","white");
                 isSpread = true;
             } else {
                 $("ul").addClass("spread-false");
                 $("ul").removeClass("spread-true");
-                $(".spread").text('>');
+                $(".spread").html('<i class="fa fa-caret-right" aria-hidden="true"></i>');
+                $(".menu-container").css("background-color","rgba(0,0,0,0)");
                 isSpread = false;
             }
         });
