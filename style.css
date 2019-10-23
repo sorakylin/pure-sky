@@ -933,7 +933,6 @@ footer {
 
 .archives-container {
     font-size: 15px;
-    max-width: 60%;
     margin: 0 auto;
     border: 1px solid #dfe2e5;
     border-radius: 3px;
@@ -949,7 +948,6 @@ footer {
 @media (max-width: 768px) {
     .archives-container {
         border: 0;
-        max-width: 90%;
     }
     .archives-article-title {
         margin-bottom: 40px;

@@ -8,7 +8,7 @@ get_header();
 <?php while (have_posts()) :
 the_post(); ?>
 
-<div class="archives-container">
+<div class="archives-container container">
     <div class="archives-content-widescreen">
         <section class="posts">
             <div class="posts-inner">
