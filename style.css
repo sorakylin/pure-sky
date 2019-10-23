@@ -931,7 +931,7 @@ footer {
 
 /*文章相关 start*/
 
-.archives-container {
+.archives-content-widescreen {
     font-size: 15px;
     margin: 0 auto;
     border: 1px solid #dfe2e5;
@@ -940,21 +940,27 @@ footer {
     padding: 15px;
 }
 
+.archives-content-widescreen:hover {
+    filter: progid:DXImageTransform.Microsoft.Shadow(color=#909090, direction=120, strength=4);
+    -moz-box-shadow: 2px 2px 10px #909090;
+    -webkit-box-shadow: 2px 2px 10px #909090;
+    box-shadow: 2px 2px 10px #909090;
+}
+
 .archives-article-title {
     text-align: center;
     margin-bottom: 70px;
 }
 
 @media (max-width: 768px) {
-    .archives-container {
+    .archives-content-widescreen {
         border: 0;
     }
+
     .archives-article-title {
         margin-bottom: 40px;
     }
 }
-
-
 
 article p {
     font-size: 15px;

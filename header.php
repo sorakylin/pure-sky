@@ -15,7 +15,7 @@
     <link href="<?php bloginfo('template_url'); ?>/css/highlight/<?php echo $options['highlight']; ?>" rel="stylesheet">
 
     <!--Font-Awesome CDN-->
-    <script src="https://use.fontawesome.com/25b2a5978b.js"></script>
+    <link href="https://cdn.bootcss.com/font-awesome/5.10.2/css/all.css" rel="stylesheet">
 
     <?php echo "<style>".$options['css']."</style>"; ?>
     <?php wp_head(); ?>
